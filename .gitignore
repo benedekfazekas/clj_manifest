@@ -2,5 +2,15 @@ pom.xml
 *jar
 /lib/
 /classes/
-/targets/
+*~
+/target
 .lein-deps-sum
+*.jar
+*.class
+.lein-deps-sum
+.lein-failures
+.lein-plugins
+.lein-repl-history
+\#*\#
+.\#*
+.DS_Store
