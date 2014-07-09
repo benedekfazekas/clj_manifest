@@ -25,5 +25,4 @@
            "!/META-INF/MANIFEST.MF")))
 
     (catch Exception _
-      (println "Warning could not find a manifest file on the classpath")
       {})))
