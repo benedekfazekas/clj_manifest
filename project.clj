@@ -1,4 +1,4 @@
-(defproject clj_manifest "0.1.0"
+(defproject clj_manifest "0.2.0"
   :description "Reads the manifest file if running as ubjerjar"
   :url "https://github.com/benedekfazekas/clj_manifest.git"
   :license {:name "Eclipse Public License"
