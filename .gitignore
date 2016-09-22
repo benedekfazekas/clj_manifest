@@ -15,3 +15,5 @@ pom.xml.asc
 \#*\#
 .\#*
 .DS_Store
+.lein-env
+.nrepl-port
