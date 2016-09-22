@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Release-Version: 1.1.0-long-version-name
+ -first-continuation
+ -second-continuation
+Build-Timestamp: 2016-09-20 16:42:23+0000
+Built-By: A Clojure
+  Developer
+Created-By: Leiningen 2.6.1
+Build-Jdk: 1.8.0_92
+Main-Class: clj_simple.app
