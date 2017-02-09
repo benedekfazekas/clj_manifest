@@ -19,13 +19,14 @@
     (keep-indexed (fn [i v] (when-not (continuation-indexes i) v)) spliced)))
 
 (defn- read-manifest [url]
-  (->> url
-       io/reader line-seq
-       (remove empty?)
-       join-continuations
-       (map #(clojure.string/split % #":\s*" 2))
-       (into {})
-       walk/keywordize-keys))
+  (with-open [r (io/reader url)]
+    (->> r
+         line-seq
+         (remove empty?)
+         join-continuations
+         (map #(clojure.string/split % #":\s*" 2))
+         (into {})
+         walk/keywordize-keys)))
 
 (defn manifest [main-class-name]
   (try
